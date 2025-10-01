@@ -110,7 +110,7 @@ function makeCard(it){
 
   // Hover cycle logic
   // ------------------------------------------------
-  const HOVER_INTERVAL_MS = 900; // <-- change speed here
+  const HOVER_INTERVAL_MS = 3000; // <-- change speed here
   let hoverTimer = null;
   let hoverIdx = 0;
 
