@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kincsek új otthonra várnak – Katalógus</title>
+  <link rel="stylesheet" href="assets/styles.css?v=1.0">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>Kincsek új otthonra várnak</h1>
+      <div class="controls">
+        <input id="q" type="search" placeholder="Keresés cím / leírás / kategória…">
+        <select id="cat">
+          <option value="">Minden kategória</option>
+        </select>
+        <select id="sort">
+          <option value="title-asc">Cím (A→Z)</option>
+          <option value="title-desc">Cím (Z→A)</option>
+          <option value="price-asc">Ár szerint (olcsóbb elöl)</option>
+          <option value="price-desc">Ár szerint (drágább elöl)</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div id="grid" class="grid"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <!-- UPDATED 2025-10-07: Messenger contact link -->
+      <a class="btn-messenger" href="https://m.me/szmada" target="_blank" rel="noopener">Üzenj Messengeren</a>
+    </div>
+  </footer>
+
+
+  <!-- Lightbox modal -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lb-close" aria-label="Bezárás" title="Bezárás">×</button>
+    <button class="lb-nav lb-prev" aria-label="Előző" title="Előző">‹</button>
+    <img id="lb-img" alt="">
+    <button class="lb-nav lb-next" aria-label="Következő" title="Következő">›</button>
+    <div id="lb-caption" class="lb-caption"></div>
+  </div>
+
+  <script src="assets/script.js?v=1.0"></script>
+</body>
+</html>

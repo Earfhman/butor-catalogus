@@ -1,0 +1,46 @@
+<!doctype html>
+<!-- 2025-10-08 13:02 – Updated title and added short story tagline under H1; no structural changes. -->
+
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Szentendrei búcsúvásár – világjáró bútorok és titokzatos tárgyak</title>
+  <link rel="stylesheet" href="assets/styles.css?v=1.0">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>Szentendrei búcsúvásár</h1>
+      <p class="tagline">Költözünk messzire: a ház minden sarka mesél. Világjáró bútorok, szőnyegek és apró csodák új gazdát keresnek – nézz szét, és találd meg a saját történetedet!</p>
+      <div class="controls">
+        <input id="q" type="search" placeholder="Keresés cím / leírás / kategória…">
+        <select id="cat">
+          <option value="">Minden kategória</option>
+        </select>
+        <select id="sort">
+          <option value="title-asc">Cím (A→Z)</option>
+          <option value="title-desc">Cím (Z→A)</option>
+          <option value="price-asc">Ár szerint (olcsóbb elöl)</option>
+          <option value="price-desc">Ár szerint (drágább elöl)</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div id="grid" class="grid"></div>
+  </main>
+
+  <!-- Lightbox modal -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lb-close" aria-label="Bezárás" title="Bezárás">×</button>
+    <button class="lb-nav lb-prev" aria-label="Előző" title="Előző">‹</button>
+    <img id="lb-img" alt="">
+    <button class="lb-nav lb-next" aria-label="Következő" title="Következő">›</button>
+    <div id="lb-caption" class="lb-caption"></div>
+  </div>
+
+  <script src="assets/script.js?v=1.0"></script>
+</body>
+</html>

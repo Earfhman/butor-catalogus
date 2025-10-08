@@ -1,19 +1,31 @@
 <!doctype html>
+<!-- 2025-10-08 19:40 (Asia/Ho_Chi_Minh) – UPDATED: Title/H1/story tagline and RESTORED footer with contact & pickup info. -->
 <html lang="hu">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Kincsek új otthonra várnak – Katalógus</title>
+  <title>Szentendrei búcsúvásár – világjáró bútorok és titokzatos tárgyak</title> <!-- UPDATED -->
   <link rel="stylesheet" href="assets/styles.css?v=1.0">
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
-      <h1>Kincsek új otthonra várnak</h1>
+      <h1>Szentendrei búcsúvásár</h1> <!-- UPDATED -->
+      <p class="tagline">Költözünk messzire: a ház minden sarka mesél. Világjáró bútorok, szőnyegek és apró csodák új gazdát keresnek – nézz szét, és találd meg a saját történetedet!</p> <!-- ADDED -->
       <div class="controls">
         <input id="q" type="search" placeholder="Keresés cím / leírás / kategória…">
         <select id="cat">
           <option value="">Minden kategória</option>
+          <option value="bútor">Bútor</option>
+          <option value="szőnyeg">Szőnyeg</option>
+          <option value="dekor">Dekor</option>
+          <option value="egyéb">Egyéb</option>
+        </select>
+        <select id="cond">
+          <option value="">Állapot (összes)</option>
+          <option value="újszerű">Újszerű</option>
+          <option value="jó">Jó</option>
+          <option value="felújítandó">Felújítandó</option>
         </select>
         <select id="sort">
           <option value="title-asc">Cím (A→Z)</option>
@@ -29,14 +41,6 @@
     <div id="grid" class="grid"></div>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <!-- UPDATED 2025-10-07: Messenger contact link -->
-      <a class="btn-messenger" href="https://m.me/szmada" target="_blank" rel="noopener">Üzenj Messengeren</a>
-    </div>
-  </footer>
-
-
   <!-- Lightbox modal -->
   <div id="lightbox" class="lightbox" aria-hidden="true">
     <button class="lb-close" aria-label="Bezárás" title="Bezárás">×</button>
@@ -45,6 +49,23 @@
     <button class="lb-nav lb-next" aria-label="Következő" title="Következő">›</button>
     <div id="lb-caption" class="lb-caption"></div>
   </div>
+
+  <!-- RESTORED FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>
+        <strong>Kapcsolat:</strong>
+        <a href="https://m.me/szmada" target="_blank" rel="noopener">Messenger üzenet</a>
+        <span class="sep">·</span>
+        <strong>Átvétel:</strong> Szentendre
+        <span class="sep">·</span>
+        <strong>Katalógus:</strong>
+        <a href="https://earfhman.github.io/butor-catalogus/" target="_blank" rel="noopener">butor-catalogus</a>
+      </p>
+      <p class="smallprint">Első jelentkező viszi · Rövid ideig elérhető kiárusítás</p>
+    </div>
+  </footer>
+  <!-- /RESTORED FOOTER -->
 
   <script src="assets/script.js?v=1.0"></script>
 </body>
